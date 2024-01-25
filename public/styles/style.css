@@ -1,0 +1,19 @@
+.header{
+    font-family: Poppins;
+    padding: 1em;
+    color:#85c0f4;
+}
+.form-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 3px silver;
+    padding: 2em 0 4em 0;
+    margin: 0 0 3em 0;
+}
+.form-container h1 {
+    color: #606060;
+    font-family: Poppins;
+}

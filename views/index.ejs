@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="/styles/style.css" class="">
+</head>
+<body>
+    <div class="container">
+        <h1 class="d-flex justify-content-center header">URL Shortener</h1>
+    <div class="form-container">
+        <h1 class="">Paste the URL to be shortened ^^</h1>
+        <form action="/shortURLs" method="POST" class="my-4 form-inline d-flex justify-content-center ">
+            
+            
+            <input placeholder="Url" type="url" class="fullUrl" id="fullUrl" required name="fullUrl" style="width: 28em;margin: 0 1em 0 0;padding: 0 0 0 .5em;">
+            <button class="btn btn-success" type="submit">Shorten URL</button>
+        </form>
+        <% if (check) {  %>
+            <p class="">Your short URL: <span> <a href="<%= shortUrls[shortUrls.length-1].short %>" class="">http://localhost:3001/<%=shortUrls[shortUrls.length-1].short %></a></span></p> 
+        <% } %>
+       
+    </div>
+    
+        
+    
+    </div>
+    
+</body>
+</html>
