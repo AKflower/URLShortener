@@ -17,6 +17,7 @@ async function startApp() {
   app.get('/', async (req,res) => {
     const shortUrls = await ShortUrl.find()
     count=shortUrls.length;
+    
     res.render('index', {shortUrls: shortUrls, check:check})
   })
 
